@@ -1,0 +1,16 @@
+[
+{
+  "modid": "shrestarter",
+  "name": "SoundHandler Restarter",
+  "description": "Add a button to quickly restart SoundHandler.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["coin3x"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
