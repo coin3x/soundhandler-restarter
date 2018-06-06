@@ -15,7 +15,7 @@ public class GuiEventHandler {
     }
     
     @SubscribeEvent
-    public void onPostActionPerfomed(GuiScreenEvent.ActionPerformedEvent.Post event) {
+    public void onPostActionPerformed(GuiScreenEvent.ActionPerformedEvent.Post event) {
         if (event.button.id == 888) {
             Minecraft mc = Minecraft.getMinecraft();
             mc.getSoundHandler().onResourceManagerReload(mc.getResourceManager());
