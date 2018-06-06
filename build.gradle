@@ -1,28 +1,29 @@
 buildscript {
     repositories {
-        mavenCentral()
+        jcenter()
         maven {
             name = "forge"
             url = "http://files.minecraftforge.net/maven"
         }
-        maven {
-            name = "sonatype"
-            url = "https://oss.sonatype.org/content/repositories/snapshots/"
-        }
     }
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.1-SNAPSHOT'
     }
 }
 
-apply plugin: 'forge'
+plugins {
+    id "net.minecraftforge.gradle.forge" version "2.0.2"
+}
 
-version = "0.1"
-group= "coin3x.soundhandlerrestarter" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+apply plugin: 'net.minecraftforge.gradle.forge'
+
+version = "0.1.1"
+group= "coin3x.soundhandlerrestarter"
 archivesBaseName = "shrestarter"
 
 minecraft {
-    version = "1.7.10-10.13.4.1614-1.7.10"
+    version = "1.8.9-11.15.1.2318-1.8.9"
+    mappings = "stable_20"
 }
 
 processResources
